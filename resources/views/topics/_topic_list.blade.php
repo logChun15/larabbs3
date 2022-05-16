@@ -1,7 +1,7 @@
 @if (count($topics))
-  <ul class="list-unstyled">
+  <ul class="list-group">
     @foreach ($topics as $topic)
-      <li class="d-flex">
+      <li class="d-flex list-group-item">
         <div class="">
           <a href="{{ route('users.show', [$topic->user_id]) }}">
             <img class="media-object img-thumbnail mr-3" style="width: 52px; height: 52px;" src="{{ $topic->user->avatar }}" title="{{ $topic->user->name }}">
@@ -38,9 +38,7 @@
 
         </div>
       </li>
-      @if (!$loop->last)
-          <hr>
-      @endif
+
     @endforeach
   </ul>
 
