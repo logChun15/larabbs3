@@ -21623,23 +21623,23 @@ body {
 }
 
 /* Topic Index Page */
-.topics-index-page .categories-show-page .list-unstyled .nav > li > a {
+.topics-index-page .list-unstyled .nav > li > a {
   position: relative;
   display: block;
   padding: 5px 14px;
   font-size: 0.9em;
 }
-.topics-index-page .categories-show-page .list-unstyled a {
+.topics-index-page .list-unstyled a {
   color: #444444;
 }
-.topics-index-page .categories-show-page .list-unstyled .meta {
+.topics-index-page .list-unstyled .meta {
   font-size: 0.9em;
   color: #b3b3b3;
 }
-.topics-index-page .categories-show-page .list-unstyled .meta a {
+.topics-index-page .list-unstyled .meta a {
   color: #b3b3b3;
 }
-.topics-index-page .categories-show-page .list-unstyled .badge {
+.topics-index-page .list-unstyled .badge {
   background-color: #d8d8d8;
 }
 
