@@ -14,6 +14,10 @@
 @import '~@fortawesome/fontawesome-free/scss/brands';
 
 
+a {
+    text-decoration: none;
+}
+
 /* universal */
 body {
     font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
@@ -73,4 +77,36 @@ html {
     border-radius: 4px;
     padding: 3px;
     }
+}
+
+/* Topic Index Page */
+.topics-index-page {
+    .list-unstyled{
+    .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 5px 14px;
+    font-size: 0.9em;
+    }
+    a {
+    color: #444444;
+    }
+    .meta {
+    font-size: 0.9em;
+    color: #b3b3b3;
+    a {
+    color: #b3b3b3;
+
+    }
+    }
+
+    .badge{
+        background-color: #d8d8d8;
+    }
+    }
+}
+
+/* Add container and footer space */
+#app > div.container {
+    margin-bottom: 100px;
 }

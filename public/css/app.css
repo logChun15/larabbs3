@@ -21562,6 +21562,10 @@ readers do not read off random characters that represent icons */
   content: "\f63f";
 }
 
+a {
+  text-decoration: none;
+}
+
 /* universal */
 body {
   font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
@@ -21616,4 +21620,30 @@ body {
   border: 1px solid #ced4da;
   border-radius: 4px;
   padding: 3px;
+}
+
+/* Topic Index Page */
+.topics-index-page .list-unstyled .nav > li > a {
+  position: relative;
+  display: block;
+  padding: 5px 14px;
+  font-size: 0.9em;
+}
+.topics-index-page .list-unstyled a {
+  color: #444444;
+}
+.topics-index-page .list-unstyled .meta {
+  font-size: 0.9em;
+  color: #b3b3b3;
+}
+.topics-index-page .list-unstyled .meta a {
+  color: #b3b3b3;
+}
+.topics-index-page .list-unstyled .badge {
+  background-color: #d8d8d8;
+}
+
+/* Add container and footer space */
+#app > div.container {
+  margin-bottom: 100px;
 }
