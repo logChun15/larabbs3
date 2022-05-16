@@ -14,6 +14,6 @@ class TopicPolicy extends Policy
 
     public function destroy(User $user, Topic $topic)
     {
-        return true;
+    return $user->isAuthorOf($topic); //和上面一样，引用了user.php的一个函数（自建）方便简洁
     }
 }

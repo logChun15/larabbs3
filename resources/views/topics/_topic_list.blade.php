@@ -11,7 +11,7 @@
         <div class="flex-grow-1 ms-2">
 
           <div class="mt-0 mb-1">
-            <a href="#" title="{{ $topic->title }}">
+            <a href="{{ route('topics.show', [$topic->id]) }}" title="{{ $topic->title }}">
               {{ $topic->title }}
             </a>
             <a class="float-end" href="#">
