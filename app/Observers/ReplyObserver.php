@@ -29,5 +29,11 @@ class ReplyObserver
         $reply->topic->user->notify(new TopicReplied($reply));
     }
 
+    public function deleted(Reply $reply)
+    {
+        $reply->topic->updateReplyCount(); //和上面crated代码一样，不过是调用自写简洁的函数
+    }
+
+
 
 }
