@@ -54,4 +54,9 @@ class Topic extends Model
         //参数 $params 允许附加 URL 参数的设定
     }
 
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
+    }
+
 }
