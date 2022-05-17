@@ -44,7 +44,7 @@ class SlugTranslateHandler
 
         $result = json_decode($response->getBody(), true);
 
-
+        // dd($result);
 
         // 尝试获取获取翻译结果
         if (isset($result['trans_result'][0]['dst'])) {
