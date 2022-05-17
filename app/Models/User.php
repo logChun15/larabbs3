@@ -9,10 +9,13 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Contracts\Auth\MustVerifyEmail as MustVerifyEmailContract;
 use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Traits\HasRoles;
+
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
     use HasApiTokens, HasFactory, MustVerifyEmailTrait;
+    use HasRoles;
     use Notifiable {
             notify as protected laravelNotify;
         }
