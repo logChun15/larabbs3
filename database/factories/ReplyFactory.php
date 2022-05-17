@@ -15,6 +15,8 @@ class ReplyFactory extends Factory
 
         return [
             'content' => $this->faker->sentence(),
+            'topic_id' => rand(1, 100),
+            'user_id' => rand(1, 10),
             'created_at' => $time,
             'updated_at' => $time,
         ];
